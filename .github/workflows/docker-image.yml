@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build ts-test docker image
-      run: docker build . --file Dockerfile --tag sc-test:$(date +%s)
+      run: docker build . --file Dockerfile --tag sc-task:$(date +%s)

@@ -6,8 +6,8 @@ image:
   tag: latest
 
 imagePullSecrets: [{ name: docker-registry }]
-nameOverride: "sc-test-app"
-fullnameOverride: "sc-test-chart"
+nameOverride: "sc-task-app"
+fullnameOverride: "sc-task-chart"
 
 serviceAccount:
   create: true
