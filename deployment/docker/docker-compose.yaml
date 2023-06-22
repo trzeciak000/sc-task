@@ -4,7 +4,7 @@ services:
     container_name: sc-task
     image: sc-task:latest
     build:
-      context: .
+      context: ../../
       dockerfile: Dockerfile
     ports:
       - 5000:5000
