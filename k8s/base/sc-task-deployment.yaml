@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    io.kompose.service: sc-task
+  name: sc-task
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: sc-task
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        io.kompose.service: sc-task
+    spec:
+      containers:
+        - image: sc-task:latest
+          name: sc-task
+          ports:
+            - containerPort: 5000
+          resources: {}
+      restartPolicy: Always
+status: {}

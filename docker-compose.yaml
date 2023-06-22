@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  sc-task:
+    container_name: sc-task
+    image: sc-task:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    networks:
+      - back-tier
+    restart:
+      always
+
+networks:
+  back-tier:
+    name: back-tier
+    driver: bridge
