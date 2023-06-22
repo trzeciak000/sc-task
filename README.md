@@ -43,3 +43,6 @@ Helm deployment:
     cd /path/to/project/deployment
     helm install sc-task-chart helmsctask/ --values helmsctask/values.yaml
     ## Verify with kubectl command
+
+
+AWS EKS cluster simple configuration: https://registry.terraform.io/modules/vistaprint/simple-eks/aws/latest
